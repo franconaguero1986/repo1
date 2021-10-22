@@ -1,0 +1,414 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+/*MENU*/
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #334752;
+  height: 90px;
+}
+.ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5 0 0rem;
+  width: 45%;
+}
+
+li a {
+  color: #EFA83C;
+  background-color: #334752;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3rem;
+  justify-content: space-between;
+}
+.logo {
+  padding-left: 2rem;
+  padding-top: .6rem;
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #EFA83C;
+  font-family: 'Monoton', cursive;
+}
+
+ul li a:hover {
+  background-color: #EFA83C;
+  color: #3C4759;
+  padding: 0.85rem 0.55rem 0.85rem 0.55rem;
+  justify-content: center;
+  transition: padding 0.5s ease;
+}
+body{
+  background-color: lightgrey;
+  font-family: sans-serif;
+}
+.imagenPortada {
+  height: 90vh;
+  background-image:url(../img/guitarrista\ portada1.jpg);
+  background-size: cover;
+  background-position:center;
+  color: #E8DEC2;
+  align-items: baseline;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.imagenPortada p {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3rem;
+}
+/* .textoInterior {
+  
+} */
+h1 {
+  font-size:  5rem;
+  margin-bottom: 1rem;
+}
+.textoInterior p {
+  margin-top: 1rem;
+  font-size: 3rem;
+}
+.parte1 {
+  background-color: #334752;
+  padding: 1rem 10rem 1rem 10rem;
+  text-align: center;
+  margin: 0;
+  color: #E8DEC2;
+  text-transform: uppercase;
+}
+.parte2 {
+  height: 70vh;
+  background-color: black
+
+}
+.parrafoUno {
+  font-size: 1.7rem;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.player {
+  display: flex;
+  height: 70vh;
+  width: auto;
+  justify-content: space-around;  
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  height: 15vh;
+  background-color: black;
+  color: #EFA83C;
+  font-family: 'Monoton', cursive;
+  font-size: 1.5rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  justify-content: left;
+}
+.copy {
+  font-family: 'Bebas Neue', cursive;
+
+}
+/*sliderGaleria*/
+.container{
+  margin: auto;
+  background-color: #84624D;
+  width: 800px;
+  padding: 30px;
+}
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+ul.slider{
+  position: relative;
+  width: 800px;
+  height: 300px;
+}
+ul.slider li {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  transition: opacity .5s;
+  background-color: #84624D;
+}
+ul.slider li img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+ul.slider li:first-child {
+  opacity: 1;
+}
+ul.slider li:target {
+  opacity: 1;
+}
+.menu{
+  text-align: center;
+  margin: 20px;
+}
+.menu li{
+  display: inline-block;
+  text-align: center;
+}
+.menu li a{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: grey;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 100%;
+}
+
+/*artistas*/
+.artistas {
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+  letter-spacing: 0.1em;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 80px 600px 80px 600px 80px 600px 80px 600px;
+  grid-template-areas: 
+    "g1 g1"
+    "g1text g1img"
+    "g2 g2"
+    "g2img g2text" 
+    "g3 g3"
+    "g3text g3img"
+    "g4 g4"
+    "g4img g4text"
+  ;
+}
+
+.g1 {
+  grid-area: g1;
+  text-align: center;
+  padding: 1em;
+  font-size: 2em;
+}
+
+.g1text {
+  grid-area: g1text;
+  font-size: 1.5rem;
+  padding: 4em;
+  margin: auto;
+}
+
+.g1img {
+  grid-area: g1img;
+  width: 80%;
+  margin: auto auto;
+  border: 2px white solid;
+}
+
+.g2 {
+  grid-area: g2;
+  text-align: center;
+  padding: 1em;
+  font-size: 2em;
+}
+
+.g2text {
+  grid-area: g2text;
+  font-size: 1.5rem;
+  margin: auto;
+  padding: 4em;
+}
+
+.g2img {
+  grid-area: g2img;
+  width: 80%;
+  margin: auto auto;
+  border: 2px white solid;
+}
+
+.g3 {
+  grid-area: g3;
+  text-align: center;
+  padding: 1em;
+  font-size: 2em;
+}
+
+.g3text {
+  grid-area: g3text;
+  font-size: 1.5rem;
+  padding: 4em;
+  margin: auto;
+}
+
+.g3img {
+  grid-area: g3img;
+  width: 80%;
+  margin: auto auto;
+  border: 2px white solid;
+}
+
+.g4 {
+  grid-area: g4;
+  text-align: center;
+  padding: 1em;
+  font-size: 2em;
+}
+
+.g4text {
+  grid-area: g4text;
+  font-size: 1.5rem;
+  padding: 4em;
+  margin: auto;
+}
+
+.g4img {
+  grid-area: g4img;
+  width: 80%;
+  margin: auto auto;
+  border: 2px white solid;
+}
+
+@media only screen and (max-width: 576px) {
+
+  nav {
+    flex-direction: column;
+  }
+
+  .ul {
+    width: 100%;
+  }
+
+  .ul a {
+    justify-content: space-around;
+    font-size: 1rem;
+  }
+
+  .logo {
+    font-size: 1rem;
+    padding-left: 1rem;
+  }
+
+  .imagenPortada {
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 2rem; 
+    padding: 0.5rem;  
+  }
+
+  .imagenPortada p {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.8rem;
+    padding: 0.5rem;
+  }
+
+  .prueba {
+    display: none;
+  }
+
+  .parte1 {
+    padding: 0.5rem;
+  }
+
+  .parrafoUno {
+    font-size: 1rem;
+  }
+  
+  .player {
+    flex-direction: column;
+    height: 300vh;
+  }
+
+  .parte2 {
+    height: 300vh;
+  }
+
+  .footer {
+    font-size: 0.8rem;
+  }
+
+  
+}
+@media only screen and (max-width: 1024px) {
+
+nav {
+  flex-direction: column;
+}
+
+.ul {
+  width: 100%;
+}
+
+.ul a {
+  justify-content: right;
+  font-size: 1rem;
+  
+}
+
+.logo {
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+
+.imagenPortada {
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 2rem; 
+  padding: 0.5rem;  
+}
+
+.imagenPortada p {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.8rem;
+  padding: 0.5rem;
+}
+
+.prueba {
+  display: none;
+}
+
+.parte1 {
+  padding: 0.5rem;
+}
+
+.parrafoUno {
+  font-size: 1rem;
+}
+
+.player {
+  flex-direction: column;
+  height: 500vh;
+}
+
+.parte2 {
+  height: 500vh;
+}
+
+.footer {
+  font-size: 0.8rem;
+}
+
+.player1 {
+  display: flex;
+  height: 70vh;
+  width: auto;
+  justify-content: center; 
+}
